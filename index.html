@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Mobile Ordering App</title>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <div class="text">
+          <h1>Ogi's Diner</h1>
+          <p>The best burgers and pizzas in town.</p>
+        </div>
+        <img src="./bg img.png" alt="" />
+      </header>
+      <div id="menu">
+        <!-- MENU LISTING HERE -->
+      </div>
+      <div id="cart">
+        <h3>Your Order</h3>
+        <div id="cart-product">
+          <!-- PRODUCT LISTING HERE -->
+        </div>
+        <div id="line"></div>
+        <div id="total">
+          <h3>Total Price</h3>
+          <p id="total-price"></p>
+        </div>
+        <button id="complete-order-btn">Complete Order</button>
+      </div>
+      <p id="thanks-text">Thanks, James! Your order is on its way!</p>
+      <!-- Credit Card Inputs -->
+      <div id="card-details">
+        <h2>Enter Card Details</h2>
+        <form action="" id="payment-submit">
+          <input
+            type="text"
+            name="fname"
+            placeholder="Enter your name"
+            required
+          />
+          <input
+            type="tel"
+            name="cname"
+            placeholder="Enter card number"
+            inputmode="numeric"
+            pattern="[0-9\s]{1,19}"
+            autocomplete="cc-number"
+            maxlength="19"
+            required
+          />
+          <input
+            type="text"
+            name="cvv"
+            placeholder="Enter CVV"
+            inputmode="numeric"
+            minlength="3"
+            maxlength="4"
+            pattern="[0-9]{3,4}"
+            required
+          />
+          <input type="submit" name="submit" id="pay-btn" value="Pay" />
+        </form>
+      </div>
+    </div>
+
+    <script src="./index.js" type="module"></script>
+    <script src="./deneme.js"></script>
+  </body>
+</html>
